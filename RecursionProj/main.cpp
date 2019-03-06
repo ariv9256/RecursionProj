@@ -23,6 +23,10 @@ int fib(int number)
 int main()
 {
     // insert code here...
+    int number = 10;
+    for(int index = 0; index < 20; index++)
+    {
     cout<< "The Fibonacci sequence at" << number << "is: " << fib(number) << endl;
+    }
     return 0;
 }
