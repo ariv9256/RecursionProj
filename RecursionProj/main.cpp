@@ -7,9 +7,22 @@
 //
 
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
+int fib(int number)
+{
+    if(number == 0 || number == 1)
+    {
+        return 1;
+    }
+    else
+    {
+        return fib(number-1) + fib(number -2);
+    }
+}
+int main()
+{
     // insert code here...
-    std::cout << "Hello, World!\n";
+    cout<< "The Fibonacci sequence at" << number << "is: " << fib(number) << endl;
     return 0;
 }
